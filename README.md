@@ -22,10 +22,8 @@ The Bash Bits Logger Module
 
 <div align="center">
 
-![Check Status](https://img.shields.io/github/checks-status/bash-bits/bb-logger/master?logo=github&style=for-the-badge)
-![Open Bug Issues](https://img.shields.io/github/issues/bash-bits/bb-logger/bug?logo=github&style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues-raw/bash-bits/bb-logger?style=for-the-badge&logo=github)
 ![Last Commit](https://img.shields.io/github/last-commit/bash-bits/bb-logger/master?logo=github&style=for-the-badge)
-![Code Size](https://img.shields.io/github/repo-size/bash-bits/bb-logger?logo=github&style=for-the-badge)
 ![MIT](https://img.shields.io/badge/License-MIT-gold?style=for-the-badge)
 
 #### _Elapsed Project Time_
@@ -97,8 +95,6 @@ bash <(curl -sfLS https://raw.githubusercontent.com/bash-bits/bb-import/master/i
 Once you've installed `BB-Import`, you can include `BB-Logger` in ANY of your Bash projects by including the following code snippet at the top of each file:
 
 ```shell
-#!/usr/bin/env bb-import
-
 bb-import bb-logger
 ```
 
