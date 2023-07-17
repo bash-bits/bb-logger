@@ -1,0 +1,12 @@
+name: BB-Logger
+id: bb-logger
+version: 0.1.0
+build-date: 20230718-0009
+synopsis: Bash-Bits Logger Module
+description: The Bash-Bits Logger Module is an advanced logging utility for Bash.
+category: Development
+author: Ragdata<ragdata@ragdata.dev>
+maintainer: Ragdata<ragdata@ragdata.dev>
+license: MIT
+homepage: https://github.com/bash-bits/bb-logger
+repository: https://github.com/bash-bits/bb-logger
