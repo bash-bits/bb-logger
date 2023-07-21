@@ -19,15 +19,16 @@
 bb-import bb-ansi
 bb-import bb-functions/filesystem
 bb-import bb-functions/is
+bb-import bb-functions/utility
 # ==================================================================
 # VARIABLES
 # ==================================================================
-##
-## BUILD VARIABLES
-##
-#declare -gx LOGGER_VERSION="v-1.0.0"
-#declare -gx LOGGER_BUILD="x"
-#declare -gx LOGGER_BUILD_DATE="20230718-0033"
+#
+# BUILD VARIABLES
+#
+declare -gx LOGGER_VERSION="v-1.0.0"
+declare -gx LOGGER_BUILD="x"
+declare -gx LOGGER_BUILD_DATE="20230718-0033"
 #
 # DEFAULT PATHS
 #
@@ -430,3 +431,55 @@ log::echoAlias()
 echoLog() { log::echoAlias "$1" "${@:2}"; }
 errLog() { log::echoAlias "$1" -c "${RED}" "${@:2}"; }
 exitLog() { log::echoAlias "$1"; exit "${2:-1}"; }
+# ------------------------------------------------------------------
+# log::version
+# ------------------------------------------------------------------
+# @description Reports the version and build date of this release
+#
+# @noargs
+#
+# @stdout Version, Copyright, & Build Information
+# ------------------------------------------------------------------
+log::version()
+{
+	local verbosity="${1:-}"
+
+	if [[ -z "$verbosity" ]]; then
+		echo "${LOGGER_VERSION}"
+	else
+		echo
+		echo "Bash-Bits Modular Bash Library"
+		echoWhite "BB-Logger Module ${LOGGER_VERSION}"
+		echo "Copyright © 2022-2023 Darren (Ragdata) Poulton"
+		echo "Build: ${LOGGER_BUILD}"
+		echo "Build Date: ${LOGGER_BUILD_DATE}"
+		echo
+	fi
+}
+# ==================================================================
+# MAIN
+# ==================================================================
+if [[ ! $(is::sourced) ]]; then
+	trap 'bb::errorHandler "LINENO" "BASH_LINENO" "${BASH_COMMAND}" "${?}"' ERR
+	options=$(getopt -l "version::" -o "v::" -a -- "$@")
+
+	evalset --"$options"
+
+	while true
+	do
+		case "$1" in
+			-v|--version)
+				[[ -n "${2}" ]] && { log::version "${2}"; shift 2; } || { log::version; shift; }
+				exitReturn 0
+				;;
+			--)
+				shift
+				break
+				;;
+			*)
+				echoError "Invalid Argument!"
+				exitReturn 2
+				;;
+		esac
+	done
+fi
