@@ -469,7 +469,13 @@ if [[ ! $(is::sourced) ]]; then
 	do
 		case "$1" in
 			-v|--version)
-				[[ -n "${2}" ]] && { log::version "${2}"; shift 2; } || { log::version; shift; }
+				if [[ -n "${2}" ]]; then
+					log::version "${2}"
+					shift 2
+				else
+					log::version
+					shift
+				fi
 				exitReturn 0
 				;;
 			--)
