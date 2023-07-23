@@ -1,0 +1,26 @@
+name: bb-logger
+id: 'ari:cloud:compass:7fed6312-9ad2-42cc-a333-97590773353a:component/358d1822-e9eb-4e7d-9562-e1be020f8ca3/5a5d2dba-2863-4190-867b-1531bdebd985'
+description: ✒️ Bash-Bits Logger Module
+configVersion: 1
+typeId: LIBRARY
+ownerId: 'ari:cloud:teams::team/dd036c87-c58b-4b4d-8951-4bd3d3779338'
+fields:
+    lifecycle: Pre-release
+    tier: 2
+links:
+    - name: null
+      type: REPOSITORY
+      url: 'https://github.com/bash-bits/bb-logger'
+relationships:
+    DEPENDS_ON:
+        - 'ari:cloud:compass:7fed6312-9ad2-42cc-a333-97590773353a:component/358d1822-e9eb-4e7d-9562-e1be020f8ca3/f492abdd-6dcd-4e5e-a93b-0721c0a0eb88'
+labels:
+    - bash-bits
+    - github
+    - library
+    - redeyed
+    - software
+customFields: null
+
+# Learn more about formatting compass.yml:
+# https://go.atlassian.com/compass-yml-format
