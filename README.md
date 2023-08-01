@@ -1,5 +1,7 @@
 <h1 align="center">
 
+<img width="100%" src="https://raw.githubusercontent.com/Ragdata/media/master/banner/wip-banner.svg" />
+
 <a href="https://github.com/bash-bits" target="_blank"><img alt="Bash-Bits" height="128" src="https://raw.githubusercontent.com/Ragdata/media/master/project/bash-bits/logo/BB-Logo-64-Full.svg" /></a>
 
 [BB-Logger v-1.0.0](https://github.com/bash-bits/bb-logger/releases/tag/v-1.0.0)
