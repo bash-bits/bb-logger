@@ -1,8 +1,8 @@
 <h1 align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/Ragdata/media/master/banner/wip-banner.svg" />
+<img width="100%" src="https://raw.githubusercontent.com/Ragdata/media/master/banner/pre-release.svg" />
 
-<a href="https://github.com/bash-bits" target="_blank"><img alt="Bash-Bits" height="128" src="https://raw.githubusercontent.com/Ragdata/media/master/project/bash-bits/logo/BB-Logo-64-Full.svg" /></a>
+<a href="https://github.com/bash-bits" target="_blank"><img alt="Bash-Bits" height="128" src="https://raw.githubusercontent.com/Ragdata/media/master/project/bash-bits/logo/BB-Logo-Full.svg" /></a>
 
 [BB-Logger v-1.0.0](https://github.com/bash-bits/bb-logger/releases/tag/v-1.0.0)
 
@@ -106,23 +106,22 @@ bb-import bb-logger
 
 ### Project Resources
 
-- ✅ [Issues Register](https://github.com/bash-bits/bb-logger/issues)
-- ✅ [Project Website](https://bash-bits.github.io/bb-logger)
+- [Issues Register](https://github.com/bash-bits/bb-logger/issues)
+- [Project Website](https://bash-bits.github.io/bb-logger)
 
-<details><summary><h3>Community Resources</h3></summary>
+### Community Resources
 
 - [**The RedEyed Community Discord Server**](https://discord.gg/54PkrM7TKq)
 
 
-- [**Community Support Document**](https://github.com/bash-bits/bb-logger/blob/master/.github/SUPPORT.md)
-- [**Community Standards**](https://github.com/bash-bits/bb-logger/community)
-- [**Community Code of Conduct**](https://github.com/bash-bits/.github/blob/master/.github/CODE_OF_CONDUCT.md)
-- [**Security Policy**](https://github.com/bash-bits/bb-logger/security/policy)
-    - [Security Overview](https://github.com/bash-bits/bb-logger/security)
-    - [Security Advisories](https://github.com/bash-bits/bb-logger/security/advisories)
-    - [Dependabot Alerts](https://github.com/bash-bits/bb-logger/security/dependabot)
-
-</details>
+- [Community Support Document](https://github.com/bash-bits/bb-import/blob/master/.github/SUPPORT.md)
+- [Community Standards](https://github.com/bash-bits/bb-import/community)
+- [Community Code of Conduct](https://github.com/bash-bits/.github/blob/master/.github/CODE_OF_CONDUCT.md)
+- [Community Governance Policy](https://github.com/bash-bits/.github/blob/master/.github/GOVERNANCE.md)
+- [Security Policy](https://github.com/bash-bits/bb-import/security/policy)
+  - [Security Overview](https://github.com/bash-bits/bb-logger/security)
+  - [Security Advisories](https://github.com/bash-bits/bb-logger/security/advisories)
+  - [Dependabot Alerts](https://github.com/bash-bits/bb-logger/security/dependabot)
 
 [`^ Top`](#toc)
 
@@ -161,13 +160,13 @@ bb-import bb-logger
 
 ### [Join me & the RedEyed Community!](https://discord.gg/54PkrM7TKq)
 
-<a href="https://twitter.com/intent/follow?screen_name=RagdataAU" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" /></a>
-<a href="https://www.reddit.com/r/RedeyedSoftware/" target="_blank"><img alt="Reddit" src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=Reddit&logoColor=white" /></a>
-<a href="https://dev.to/ragdata" target="_blank"><img alt="Dev.to" src="https://img.shields.io/badge/dev.to-373737?style=for-the-badge&logo=dev.to&logoColor=white" /></a>
-<a href="https://ragdata.substack.com/" target="_blank"><img alt="SubStack" src="https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=Substack&logoColor=white" /></a>
-<a href="https://www.facebook.com/RedEyedSoftware/" target="_blank"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=Facebook&logoColor=white" /></a>
+<a href="https://www.facebook.com/RedeyedAU/" target="_blank"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=Facebook&logoColor=white" /></a>
+<a href="https://redeyedau.substack.com/" target="_blank"><img alt="SubStack" src="https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=Substack&logoColor=white" /></a>
+<a href="https://dev.to/redeyed-au" target="_blank"><img alt="Dev.to" src="https://img.shields.io/badge/dev.to-373737?style=for-the-badge&logo=dev.to&logoColor=white" /></a>
+<a href="https://www.reddit.com/r/RedeyedAU/" target="_blank"><img alt="Reddit" src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=Reddit&logoColor=white" /></a>
+<a href="https://twitter.com/intent/follow?screen_name=RedeyedAU" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" /></a>
 
-[![Discord](https://img.shields.io/discord/1067204348251230298?labelColor=5865F2&label=RedEyed%20Software%20&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/54PkrM7TKq)
+[![Discord](https://img.shields.io/discord/1067204348251230298?labelColor=5865F2&label=RedEyed%20Software%20&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/s6gZZUc67y)
 
 </div>
 
