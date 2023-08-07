@@ -9,7 +9,7 @@
 </h1>
 
 <h3 align="center">
-The Bash Bits Logger Module
+The Bash-Bits Logger Module
 <em></em>
 </h3>
 
@@ -63,7 +63,7 @@ If you like this repo, please give it a ⭐ (it really does help)
 
 ## ⭐ [Project Overview](#toc)
 
-The Bash Bits Logger Module - advanced logging tools for Bash.
+The Bash-Bits Logger Module - advanced logging tools for Bash.
 
 ### [Branch Reliability](#toc)
 
@@ -99,6 +99,12 @@ Once you've installed `BB-Import`, you can include `BB-Logger` in ANY of your Ba
 ```shell
 bb-import bb-logger
 ```
+
+[`^ Top`](#toc)
+
+## 📛 [Badges](#toc)
+
+#### COMING SOON
 
 [`^ Top`](#toc)
 
@@ -174,7 +180,7 @@ bb-import bb-logger
 
 ## 🔐 [Security](#toc)
 
-While the `Bash Bits` project follows good security practices, 100% security can never be guaranteed in any software package.  The `Bash Bits Logger Module` is provided AS IS, and without warranty.  You can find more details in the [LICENSE](LICENSE) file included with this repository.
+While the `Bash-Bits` project follows good security practices, 100% security can never be guaranteed in any software package.  The `Bash-Bits Logger Module` is provided AS IS, and without warranty.  You can find more details in the [LICENSE](LICENSE) file included with this repository.
 
 If you discover any issue regarding the security of this project, please disclose that information responsibly by sending a [security advisory][advisory].  **PLEASE DO NOT CREATE AN ISSUE OR DISCUSSION TOPIC.**  You can read more about this project's security policies [HERE][security]
 
@@ -186,7 +192,7 @@ If you discover any issue regarding the security of this project, please disclos
 [![All Contributors](https://img.shields.io/github/all-contributors/bash-bits/bb-logger?color=ee8449&style=for-the-badge)](CONTRIBUTORS.md)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-If you'd like to make a contribution, then please see the [**Bash Bits Contributor's Guide**][contributing]
+If you'd like to make a contribution, then please see the [**Bash-Bits Contributor's Guide**][contributing]
 
 It's not just contributions of code that I'm looking for.  If you have any ideas or suggestions about how this project may be improved, don't hesitate to [open an issue][issues] and let me know!  Contributions of ALL kinds will be recognised here if they are made part of this project - thanks to the [All-Contributors][all-contributors] bot.
 
