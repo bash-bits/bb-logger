@@ -446,14 +446,14 @@ log::version()
 	local verbosity="${1:-}"
 
 	if [[ -z "$verbosity" ]]; then
-		echo "${LOGGER_VERSION}"
+		echo "${PKG_VERSION}"
 	else
 		echo
 		echo "Bash-Bits Modular Bash Library"
-		echoWhite "BB-Logger Module ${LOGGER_VERSION}"
+		echoWhite "BB-Logger Module ${PKG_VERSION}"
 		echo "Copyright © 2022-2023 Darren (Ragdata) Poulton"
-		echo "Build: ${LOGGER_BUILD}"
-		echo "Build Date: ${LOGGER_BUILD_DATE}"
+		echo "Build: ${PKG_BUILD}"
+		echo "Build Date: ${PKG_BUILD_DATE}"
 		echo
 	fi
 }
