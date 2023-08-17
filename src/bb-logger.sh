@@ -85,8 +85,14 @@ log::init()
 {
     local fileName="${1:-"debug"}"
 
-    [[ ! -d "$BB_LOG_DIR" ]] && { mkdir -p "$BB_LOG_DIR" || return 1; }
-    [[ ! -f "$BB_LOG_DIR/$fileName" ]] && { touch "$BB_LOG_DIR/$fileName" || return 1; }
+	if [[ "${fileName:0:1}" != "/" ]]; then
+	    [[ ! -d "$BB_LOG_DIR" ]] && { mkdir -p "$BB_LOG_DIR" || return 1; }
+    	[[ ! -f "$BB_LOG_DIR/$fileName" ]] && { touch "$BB_LOG_DIR/$fileName" || return 1; }
+    else
+		local fileDir="${fileName%/*}"
+		[[ ! -d "$fileDir" ]] && { mkdir -p "$fileDir" || return 1; }
+		[[ ! -f "$fileName" ]] && { touch "$fileName" || return 1; }
+    fi
 
     return 0
 }
