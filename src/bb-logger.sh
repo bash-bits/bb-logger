@@ -88,10 +88,14 @@ log::init()
 	if [[ "${fileName:0:1}" != "/" ]]; then
 	    [[ ! -d "$BB_LOG_DIR" ]] && { mkdir -p "$BB_LOG_DIR" || return 1; }
     	[[ ! -f "$BB_LOG_DIR/$fileName" ]] && { touch "$BB_LOG_DIR/$fileName" || return 1; }
+    	unset BB_LOG
+    	declare -gx BB_LOG="${BB_LOG_DIR}/$fileName"
     else
 		local fileDir="${fileName%/*}"
 		[[ ! -d "$fileDir" ]] && { mkdir -p "$fileDir" || return 1; }
 		[[ ! -f "$fileName" ]] && { touch "$fileName" || return 1; }
+		unset BB_LOG
+		declare -gx BB_LOG="$fileName"
     fi
 
     return 0
@@ -107,6 +111,7 @@ initLog() { log::init "${1:-"debug"}"; }
 log::rotate()
 {
     local filePath="${BB_LOG}"
+    local fileDir="${filePath%/*}"
     local fileName="${filePath##*/}"
     local timestamp="$(date +%s)"
     local archive="${BB_LOG_ARCHIVE}"
@@ -116,12 +121,12 @@ log::rotate()
     # timestamp the current logfile
     mv "$filePath" "$filePath.$timestamp"
     # cull excess backups
-    files="$(find "$BB_LOG_DIR" -name "$fileName" | wc -l)"
+    files="$(find "$fileDir" -name "$fileName" | wc -l)"
     diff=$(( "$files" - "$BB_LOG_BACKUPS" ))
     diff=$diff++
     if [[ "$diff" -gt 0 ]]; then
         c=1
-        for file in "$BB_LOG_DIR/$fileName"*
+        for file in "$fileDir/$fileName"*
         do
             rm -f "$file"
             [[ $c -eq $diff ]] && break || $c++
