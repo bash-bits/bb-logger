@@ -26,11 +26,11 @@ bb-import bb-regex/options
 # VARIABLES
 # ==================================================================
 #
-# BUILD VARIABLES
+# VERSION
 #
-declare -gx LOGGER_VERSION="v-1.0.0"
-declare -gx LOGGER_BUILD="x"
-declare -gx LOGGER_BUILD_DATE="20230718-0033"
+PKG_VERSION="0.1.0"
+PKG_BUILD="1001"
+PKG_BUILD_DATE="20230813:1940"
 #
 # DEFAULT PATHS
 #
